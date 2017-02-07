@@ -2,20 +2,13 @@ import React from 'react';
 import {Accounts} from 'meteor/std:accounts-ui';
 
 const Home = () => (
-  <div>
-    <h1>Mantra</h1>
-    <p>
-      Welcome to Mantra 0.4.2.
-    </p>
-    <ul>
-      <li>
-        Read <a target="_blank" href="https://kadirahq.github.io/mantra/">spec</a>
-      </li>
-      <li>
-        Learn <a target="_blank" href="https://github.com/sungwoncho/mantra-cli#commands">CLI</a>
-      </li>
-    </ul>
-    <Accounts.ui.LoginForm/>
+  <div className='container'>
+    <div className='row around-xs'>
+      <div className='col-xs-12 col-sm-8 col-md-6 col-lg-4'>
+      <h1>Accounts Material UI Demo</h1>
+      <Accounts.ui.LoginForm/>
+    </div>
+    </div>
   </div>
 );
 
